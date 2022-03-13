@@ -8,49 +8,121 @@
     width: 45vw;
     height: 60vh;
     margin: auto;
-    
+}
+
+.logo{
+  min-height: 4vw;
+  padding: 1.5vw;
+  min-width: 7vw;
+  text-align: center;
+  justify-content: center;
+}
+
+.brand{
+  align-items: center;
+  display: inline-flex;
+  height: 10vh;
+  justify-content: flex-start;
+}
+.brand ul{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  min-height: 4vw;
+  min-width: 30vw;
+  padding: 1.5vw;
+  margin-left: 11vw;
+}
+.brand li{
+  display: inline-flex;
+  margin-right: 1vw;
+}
+
+.brand i{
+  font-size: 24px;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navigation a:after,
+.navigation a:before {
+  transition: all .5s;
+}
+
+.navigation a:hover{
+  color: white;
+}
+
+.navigation a::after{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '';
+  color: transparent;
+  background: #202020;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.navigation a:hover::after{
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  color: #a55013;
+}
+
+.navigation li{
+  display: inline-block;
+  margin-right: 3vw;
+}
+
+.navigation-left{
+  margin-left: 11vw;
+}
+
+.navigation-right{
+  margin-left: 16vw;
+}
+
+.navigation{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7vh;
+  font-family:'Poppins', sans-serif;
+}
+
+.aboutmePictureContainer{
+  display: flex;
+  float: left;
+  margin-top: 13vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  width: 45vw;
+  height: 74vh;
 }
 
 .main-content{
     background-color: lightyellow;
-    width: 100vmax;
-    height: 100vmin;
-    position: absolute;
-}
-
-.pricing-nav{
-    width: 18%;
-    float: left;
-    /* background-color: #FF7477; */
-    margin-left: 6vw;
-    text-align: left;
-    font-size: 2.5vh;
-    font-weight: 700;
-}
-.pricing-nav-bootstrapModify{
-    color: #a55013;
-    border-color: #FF7477;
-    background-color: peachpuff;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-width: 1.5px;
-}
-
-.pricing-nav-bootstrapModify:hover{
-    background-color: #FF7477;
-}
-
-.pricing-nav-active{
-    background-color: #FF7477;
-}
-
-.pricing-header{
-    margin: 4vmax;
-    text-align: center;
-    font-style: oblique;
-    font-size: 2.5vmax;
-    font-family:sans-serif;
+    max-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 .pictureNavbar{
