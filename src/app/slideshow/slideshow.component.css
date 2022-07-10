@@ -49,13 +49,6 @@
     margin: auto;
 }
 
-.imgStrech{
-  flex:100vw;
-  object-fit:fill;
-  height: 100vh;
-  opacity:0.85;
-}
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -145,9 +138,31 @@
     margin-left: 5vw;
 }
 
+.imgStrech{
+    flex:100vw;
+    object-fit:fill;
+    height: 100vh;
+    /* opacity:0.85; */
+}
+
 .slides {
     display: flex;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
+
+.bg-1{
+    background-image:url(src\assets\img\Danube.jpg);
+}
+
+.bg-2{
+    background-image:url(src\assets\img\JulyMorning.jpg);
+}
+
+.bg-3{
+    background-image:url(src\assets\img\Statue.jpg);
+}
 
   .next {
     right: 0;
