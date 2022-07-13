@@ -66,29 +66,36 @@ html,body
 }
 
 .aboutmePictureContainer{
-  margin: max(.25rem, 12.5vmin);
-  border: 1px solid red;
+  padding: max(.5rem, 12.5vmin);
 }
 
 img.about-me{
-  width: 50vmin;
-  height: 65vmin;
+  max-width: 55vmin;
+  max-height: 70vmin;
+  width: auto;
+  height: auto;
 }
 
 img.rounded-corners{
   border-radius: .5rem;
   border: 1px ridge black;
-  box-shadow: 7px 9px 10px 1px black;
+  box-shadow: 1px 2px 3px black;
 }
 
 .about-me-text-container{
-  margin: max(.25rem, 12.5vmin);
-  max-width: 80ch;
-  border: 1px red solid;
+  padding: max(.25rem, 12.5vmin);
+  max-width: 50ch;
+  max-height: 70vmin;
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  width: auto;
+  height: auto;
 }
 
-p.about-me-text-container{
-  font-family: 'Courier New', Courier, monospace;
+.about-me-text-container p{
+  font-family: sans-serif;
+  line-height: 2.7rem;
+  color: #686565;
 }
 
 .main-content{
@@ -101,7 +108,34 @@ p.about-me-text-container{
 
 h3{
   font-size: 3rem;
+  color: #2b4b2d;
 }
 
 /* My work section */
 
+.portfolio-grid{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10rem;
+  width: min(95%, 120rem);
+}
+
+.gr-1{
+  background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+.gr-2{
+  background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.gr-3{
+  background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.portfolio-img{
+  max-width:100%;
+  max-height:100%;
+}

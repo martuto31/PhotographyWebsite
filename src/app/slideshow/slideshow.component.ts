@@ -28,10 +28,8 @@ export class SlideshowComponent implements OnInit {
     {
       slideIndex = 1;
     }
-    console.log(slideIndex - 1);
-    console.log(slideIndex);
     slides[slideIndex - 1].style.display = "flex";
-    setTimeout(() => {this.slideShow(slideIndex)}, 5000);
+    setTimeout(() => {this.slideShow(slideIndex)}, 3500);
   }
 
   makeNavbarActive(id: number){ 
