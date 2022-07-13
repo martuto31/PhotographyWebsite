@@ -77,9 +77,13 @@ img.about-me{
 }
 
 img.rounded-corners{
-  border-radius: .5rem;
-  border: 1px ridge black;
-  box-shadow: 1px 2px 3px black;
+  border-radius: .125rem;
+  border: 2px ridge black;
+  box-shadow:
+   12px 8px 0 0px white,
+   14px 6px 0 0px black,
+   14px 10px 0 0px black,
+   10px 10px 0 0px black;;
 }
 
 .about-me-text-container{
