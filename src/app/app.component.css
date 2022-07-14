@@ -95,7 +95,7 @@ img.rounded-corners{
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     background-color: white;
-    padding: max(.25rem, 15vmin);
+    padding: max(1rem, 7vmin);
     align-items: center;
 }
 
@@ -151,6 +151,10 @@ h3{
   letter-spacing: .125rem;
   padding: .8rem;
   box-sizing: border-box;
+}
+
+.btn:hover{
+  background-color: #1c5c85;
 }
 
 .portfolio-img{
