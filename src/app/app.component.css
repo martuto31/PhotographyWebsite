@@ -65,35 +65,21 @@ html,body
     margin: auto;
 }
 
-.aboutmePictureContainer{
-  padding: max(.5rem, 12.5vmin);
-}
-
 img.about-me{
-  max-width: 55vmin;
-  max-height: 70vmin;
+  max-width: 60vmin;
+  max-height: 80vmin;
   width: auto;
   height: auto;
 }
 
 img.rounded-corners{
-  border-radius: .125rem;
-  border: 2px ridge black;
-  box-shadow:
-   12px 8px 0 0px white,
-   14px 6px 0 0px black,
-   14px 10px 0 0px black,
-   10px 10px 0 0px black;;
+  box-shadow: 10px 10px 0 0px #5f8db6;
 }
 
 .about-me-text-container{
-  padding: max(.25rem, 12.5vmin);
-  max-width: 50ch;
-  max-height: 70vmin;
+  max-width: 40ch;
   font-family: sans-serif;
   font-size: 1.7rem;
-  width: auto;
-  height: auto;
 }
 
 .about-me-text-container p{
@@ -102,7 +88,15 @@ img.rounded-corners{
   color: #686565;
 }
 
-.main-content{
+.about-me-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    background-color: white;
+    padding: max(.25rem, 15vmin);
+}
+
+.portfolio-container{
     display: flex;
     background-color: white;
     max-width: 100%;
@@ -119,7 +113,7 @@ h3{
 
 .portfolio-grid{
   display: grid;
-  gap: 1.5rem;
+  gap: .5rem;
   grid-template-columns: repeat(3, 1fr);
   padding: 10rem;
   width: min(95%, 120rem);
@@ -127,16 +121,31 @@ h3{
 
 .gr-1{
   background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
-  background-size: cover;
+  background-size: 80% 80%;
+
 }
 .gr-2{
   background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
-  background-size: cover;
+  background-size: 80% 80%;
 }
 
 .gr-3{
   background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
-  background-size: cover;
+  background-size: 80% 80%;
+
+}
+
+.btn-container{
+  align-items: flex-end;
+}
+
+.btn{
+  background-color: #5f8db6;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: .25rem;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .portfolio-img{
