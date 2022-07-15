@@ -66,6 +66,7 @@ html,body
 }
 
 img.about-me{
+  /* display: block; */
   max-width: 60vmin;
   max-height: 80vmin;
   width: auto;
@@ -93,10 +94,22 @@ img.rounded-corners{
 .about-me-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
     background-color: white;
-    padding: max(1rem, 7vmin);
+    padding: min(4rem, 4vmin);
     align-items: center;
+}
+
+@media(max-width: 900px){
+  .about-me-container{
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-text-container p{
+    font-size: 1rem;
+  }
+
+  
 }
 
 .portfolio-container{
@@ -110,8 +123,8 @@ img.rounded-corners{
 h3{
   font-size: 4rem;
   color: #5f8db6;
-  line-height: 0.6rem;
-  margin-bottom: 5rem;
+  line-height: 1;
+  margin-bottom: min(1.5em, 10vmin);
   font-weight: 700;
 }
 
