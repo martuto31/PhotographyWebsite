@@ -103,13 +103,15 @@ img.rounded-corners{
 @media(max-width: 900px){
   .about-me-container{
     grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+    padding: min(1rem, 3vmin);
+    padding-top: 4rem;
   }
 
   .about-me-text-container p{
     font-size: 1rem;
   }
-
-  
 }
 
 .portfolio-container{
@@ -121,10 +123,10 @@ img.rounded-corners{
 }
 
 h3{
-  font-size: 4rem;
+  font-size: min(4rem, 11vmin);
   color: #5f8db6;
   line-height: 1;
-  margin-bottom: min(1.5em, 10vmin);
+  margin-bottom: min(1.5em, 9vmin);
   font-weight: 700;
 }
 
@@ -155,15 +157,15 @@ h3{
 }
 
 .btn-container{
-  margin-top: 7rem;
+  margin-top: min(7rem, 10vmin);
 }
 
 .btn{
   background-color: #5f8db6;
   color: white;
   font-family: sans-serif;
-  letter-spacing: .125rem;
-  padding: .8rem;
+  letter-spacing: .1em;
+  padding: min(.8rem, 2vmin);
   box-sizing: border-box;
 }
 
