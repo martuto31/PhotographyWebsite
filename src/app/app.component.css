@@ -100,6 +100,18 @@ img.rounded-corners{
     align-items: center;
 }
 
+@media(min-width: 2000px)
+{
+  .about-me-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background-color: white;
+    padding: 8vw;
+    align-items: center;
+  }
+}
+
 @media(max-width: 900px){
   .about-me-container{
     grid-template-columns: 1fr;
@@ -115,11 +127,11 @@ img.rounded-corners{
 }
 
 .portfolio-container{
-    display: flex;
-    background-color: white;
-    max-width: 100%;
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  background-color: white;
+  max-width: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
 
 h3{
@@ -132,28 +144,35 @@ h3{
 
 /* My work section */
 
-.portfolio-grid{
+.card-container{
   display: grid;
-  gap: .5rem;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 10rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  padding: 7rem;
   width: min(95%, 120rem);
 }
 
-.gr-1{
-  background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
-  background-size: 80% 80%;
+.card{
+  /* width: 40vmin; */
+  /* margin: 3rem; */
+  /* height: 60vmin; */
+  border: 1px solid green;
+}
 
+.card-image{
+  height: 40vmin;
+  background-size: cover;
+}
+
+.gr-1{
+  background-image: url(src\assets\img\JulyMorning.jpg);
 }
 .gr-2{
-  background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
-  background-size: 80% 80%;
+  background-image: url(src\assets\img\KatyBirthday.jpg);
 }
 
 .gr-3{
-  background:url(src\assets\img\KatyBirthday.jpg) no-repeat center fixed;
-  background-size: 80% 80%;
-
+  background-image: url(src\assets\img\Statue.jpg);
 }
 
 .btn-container{
