@@ -128,7 +128,7 @@ img.rounded-corners{
 
 .portfolio-container{
   display: flex;
-  background-color: white;
+  background-color: rgb(241, 238, 238);
   max-width: 100%;
   min-height: 100vh;
   width: 100%;
@@ -147,32 +147,36 @@ h3{
 .card-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
-  padding: 7rem;
-  width: min(95%, 120rem);
+  gap: 1.5rem;
+  padding-inline: min(20vmin, 10rem);
+  padding-block: min(10vmin, 7rem);
+  width: 100%;
+  justify-items: center;
 }
 
 .card{
-  /* width: 40vmin; */
-  /* margin: 3rem; */
-  /* height: 60vmin; */
-  border: 1px solid green;
+  border-radius: .7rem;
+  width: 40vmin;
+  overflow:hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px 1px, rgba(0, 0, 0, 0.12) 0px -12px 30px 1px, rgba(0, 0, 0, 0.12) 0px 4px 6px 1px, rgba(0, 0, 0, 0.17) 0px 12px 13px 1px, rgba(0, 0, 0, 0.09) 0px -3px 5px 1px;
 }
 
 .card-image{
-  height: 40vmin;
+  height: 50vmin;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gr-1{
-  background-image: url(src\assets\img\JulyMorning.jpg);
+  background-image: url(src\assets\img\Meri2.jpg);
 }
 .gr-2{
-  background-image: url(src\assets\img\KatyBirthday.jpg);
+  background-image: url(src\assets\img\Krisi2.jpg);
 }
 
 .gr-3{
-  background-image: url(src\assets\img\Statue.jpg);
+  background-image: url(src\assets\img\Vanesa2.jpg);
 }
 
 .btn-container{
