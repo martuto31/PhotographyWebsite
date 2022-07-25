@@ -84,7 +84,7 @@ img.rounded-corners{
   background-color: white;
   padding: min(4rem, 4vmin);
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .about-me-text-container{
@@ -120,6 +120,7 @@ img.rounded-corners{
     margin: auto;
     padding: min(1rem, 3vmin);
     padding-top: 4rem;
+    height: 100%;
   }
 
   .about-me-text-container p{
@@ -127,12 +128,12 @@ img.rounded-corners{
   }
 }
 
-.card-container{
+.card-wraper{
   display: flex;
   background-color: rgb(241, 238, 238);
   max-width: 100%;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 h3{
@@ -143,27 +144,77 @@ h3{
   font-weight: 700;
 }
 
-/* My work section */
+/* Portfolio section */
 
 .card-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
-  padding-inline: min(20vmin, 10rem);
-  padding-block: min(10vmin, 7rem);
+  padding-inline: min(10vmin, 1.5rem);
+  padding-block: min(10vmin, 3rem);
   width: 100%;
   justify-items: center;
+  align-items: center;
 }
 
 .card{
   border-radius: .7rem;
-  width: 43vmin;
-  overflow:hidden;
+  width: 25vw;
+  height: 75vh;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px 2px, rgba(0, 0, 0, 0.12) 0px -12px 30px 2px, rgba(0, 0, 0, 0.12) 0px 4px 6px 2px, rgba(0, 0, 0, 0.17) 0px 12px 13px 2px, rgba(0, 0, 0, 0.09) 0px -3px 5px 2px;
 }
 
+@media(max-width: 950px) {
+  .card-container{
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+
+  .card{
+    width: 60vw;
+    height: 100%;
+  }
+
+  .card h1{
+    font-size: min(5vw, 2.3rem) !important;
+  }
+
+  .card p{
+    font-size: min(2.5vw,1rem) !important;
+  }
+
+  .card-btn{
+    font-size: 1.2rem !important;
+  }
+}
+
+@media(max-width: 600px) {
+  .card-container{
+    grid-template-columns: 1fr;
+  }
+
+  .card{
+    width: 60vw;
+    height: 100%;
+  }
+
+  .card h1{
+    font-size: min(4.5vw ,1.4rem) !important;
+  }
+
+  .card p{
+    font-size: min(2.5vw, .8rem) !important;
+  }
+
+  .card-btn{
+    font-size: .9rem !important;
+    padding: .7rem !important;
+  }
+}
+
 .card h1{
-  font-size: 2rem;
+  font-size: min(2vw, 2rem);
   color: #5f8db6;
   line-height: 1;
   letter-spacing: .05rem;
@@ -175,7 +226,7 @@ h3{
 
 .card p{
   font-family: sans-serif;
-  font-size: .8rem;
+  font-size: min(1vw, .8rem);
   line-height: 1.4;
   color: rgb(150, 150, 150);
   letter-spacing: .1rem;
@@ -199,7 +250,7 @@ h3{
 
 .card-btn{
   background-color: #5f8db6;
-  font-size: 1.2rem;
+  font-size: min( 1.6vw, 1.2rem);
   color: white;
   font-family: sans-serif;
   letter-spacing: .1em;
