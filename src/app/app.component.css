@@ -126,6 +126,11 @@ img.rounded-corners{
   .about-me-text-container p{
     font-size: 1rem;
   }
+
+  .btn{
+    padding: 2px;
+    font-size: 1.4rem;
+  }
 }
 
 .card-wraper{
