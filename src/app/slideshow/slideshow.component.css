@@ -140,6 +140,47 @@
       gap: .3rem !important;
     }
   }
+
+  @media(max-width: 920px){
+    .home-nav{
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      list-style: none;
+      /* width: 10vw; */
+      /* margin-inline: 5vw; */
+      position: relative;
+      padding: 0;
+      /* margin-block: .3rem; */
+      margin-top: 10rem;
+      margin-bottom: -9.7rem;
+    }
+    .home-nav-container{
+      /* background-color: steelblue; */
+      backdrop-filter: blur(2rem);
+      inset: 0 0 0 60%;
+      flex-direction: column;
+      position: fixed;
+    }
+
+    .home-nav a{
+      padding: .5rem;
+      margin: 0rem;
+      margin-top: 1rem;
+      font-size: min(3.4vw, 1.1rem);
+      color: black;
+      letter-spacing: 1px;
+      line-height: 1.9;
+    }
+
+    .logo{
+      display: none;
+    }
+
+    .brand-container{
+      display: none;
+    }
+  }
   
   .home-nav a:after,
   .home-nav a:before {
