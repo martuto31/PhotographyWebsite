@@ -151,11 +151,8 @@
       align-items: left;
       flex-direction: column;
       list-style: none;
-      /* width: 10vw; */
-      /* margin-inline: 5vw; */
       position: relative;
       padding: 0;
-      /* margin-block: .3rem; */
       margin-top: 30vh;
       margin-bottom: -9.7rem;
     }
@@ -178,9 +175,6 @@
       display: block;
       position: fixed;
       z-index: 9;
-      /* content: "\f0c9"; */
-      /* background-size: contain; */
-      /* background-attachment: fixed; */
       background-repeat: no-repeat;
       background: url(src\assets\img\bar-icon.png);
       border: 0;
@@ -189,9 +183,6 @@
       top: 2rem;
       right: 2rem;
       font-family: FontAwesome;
-      /* opacity: 0.3; */
-      /* background-color: rgb(182, 176, 176); */
-      /* color: black; */
     }
 
     .logo{
@@ -295,7 +286,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    /* transition: 300ms ease-out; */
+    transition:all 0.5s ease;
   }
 
 .bg-1{
