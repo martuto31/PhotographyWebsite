@@ -21,7 +21,7 @@
 </div> -->
 
 <div class="slideshow-container">
-    <div class="slides imgStrech bg-1">
+    <div class="slides imgStrech bg-1" id="slides">
         <div class="pictureNavbar">
             <div class="brand-container">
               <nav class="brand">
@@ -44,7 +44,8 @@
                 </ul>
               </nav>
             </div>
-            <nav class="home-nav-container">
+
+            <nav class="home-nav-container" >
               <ul class="home-nav">
                 <li>
                   <a class="" href="#">Home</a>
@@ -69,9 +70,37 @@
                 </li>
               </ul>
             </nav>
+
+            <button (click)="onToggle()" class="mobile-nav-toggle" aria-controls="home-nav" aria-expanded="false">
+              <!-- <i class="fa-solid fa-bars"></i> -->
+              <span class="sr-only">Menu</span>
+            </button>
+
+            <nav class="home-nav-container-mobile" data-visible="false" id="home-nav">
+              <ul class="home-nav">
+                <li>
+                  <a class="" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="" href="#">About me</a>
+                </li>
+                <li>
+                  <a class="" href="#">Pricing</a>
+                </li>
+                <li>
+                  <a class="" href="#">Contacts</a>
+                </li>
+                <li>
+                  <a class="" href="#">My work</a>
+                </li>
+                <li>
+                  <a class="" href="#">Info</a>
+                </li>
+              </ul>
+            </nav>
         </div>    
     </div>
-    <div class="slides imgStrech bg-2">
+    <!-- <div class="slides imgStrech bg-2">
       <div class="pictureNavbar">
         <div class="brand-container">
           <nav class="brand">
@@ -94,7 +123,11 @@
             </ul>
           </nav>
         </div>
-        <nav class="home-nav-container">
+        <button class="mobile-nav-toggle" aria-controls="home-nav2" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="home-nav-container" id="home-nav2" data-visible="false">
           <ul class="home-nav">
             <li>
               <a class="" href="#">Home</a>
@@ -145,7 +178,11 @@
             </ul>
           </nav>
         </div>
-        <nav class="home-nav-container">
+        <button class="mobile-nav-toggle" aria-controls="home-nav3" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="home-nav-container" id="home-nav3" data-visible="false">
           <ul class="home-nav">
             <li>
               <a class="" href="#">Home</a>
@@ -171,5 +208,5 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </div> -->
   </div>

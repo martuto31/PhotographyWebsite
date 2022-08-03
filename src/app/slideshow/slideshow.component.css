@@ -75,6 +75,10 @@
     font-size: 24px;
 }
 
+.mobile-nav-toggle{
+  display: none;
+}
+
 .logo{
     min-height: 4vw;
     padding: 1.5vw;
@@ -152,15 +156,12 @@
       position: relative;
       padding: 0;
       /* margin-block: .3rem; */
-      margin-top: 10rem;
+      margin-top: 30vh;
       margin-bottom: -9.7rem;
     }
+
     .home-nav-container{
-      /* background-color: steelblue; */
-      backdrop-filter: blur(2rem);
-      inset: 0 0 0 60%;
-      flex-direction: column;
-      position: fixed;
+      display: none!important;
     }
 
     .home-nav a{
@@ -173,6 +174,26 @@
       line-height: 1.9;
     }
 
+    .mobile-nav-toggle{
+      display: block;
+      position: fixed;
+      z-index: 9;
+      /* content: "\f0c9"; */
+      /* background-size: contain; */
+      /* background-attachment: fixed; */
+      background-repeat: no-repeat;
+      background: url(src\assets\img\bar-icon.png);
+      border: 0;
+      width: 24px;
+      aspect-ratio: 1;
+      top: 2rem;
+      right: 2rem;
+      font-family: FontAwesome;
+      /* opacity: 0.3; */
+      /* background-color: rgb(182, 176, 176); */
+      /* color: black; */
+    }
+
     .logo{
       display: none;
     }
@@ -181,7 +202,18 @@
       display: none;
     }
   }
+
+  @media (min-width: 920px)
+  {
+    .home-nav-container-mobile{
+      display: none!important;
+    }
+  }
   
+  .home-nav-container-mobile[data-visible="true"]{
+    transform: translateX(0%);
+  }
+
   .home-nav a:after,
   .home-nav a:before {
     transition: all .5s;
@@ -230,7 +262,18 @@
     display: inline-flex;
     min-height: 7vh;
     font-family:'Poppins', sans-serif;
-  }  
+  }
+  .home-nav-container-mobile{
+    display: flex;
+    /* background-color: steelblue; */
+    backdrop-filter: blur(2rem);
+    inset: 0 0 0 60%;
+    flex-direction: column;
+    position: fixed;
+    z-index: 8;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
 
 .main-nav{
     color: black;
@@ -252,6 +295,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    /* transition: 300ms ease-out; */
   }
 
 .bg-1{
