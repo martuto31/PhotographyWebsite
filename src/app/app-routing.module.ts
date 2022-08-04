@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { WeddingPhotoshootComponent } from './wedding-photoshoot/wedding-photoshoot.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
   {path: '', component: AppComponent},
-  {path: 'wedding-service', component: WeddingPhotoshootComponent}
+  {path: 'portfolio', component: PortfolioComponent},
 ];
 
 @NgModule({
