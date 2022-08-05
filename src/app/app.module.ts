@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { WeddingComponent } from './portfolio/wedding/wedding.component';
+import { PortraitComponent } from './portfolio/portrait/portrait.component';
+import { GraduationComponent } from './portfolio/graduation/graduation.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HomeComponent,
     SlideshowComponent,
     PortfolioComponent,
+    WeddingComponent,
+    PortraitComponent,
+    GraduationComponent,
   ],
   imports: [
     BrowserModule,
