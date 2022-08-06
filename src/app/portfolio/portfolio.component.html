@@ -1,18 +1,23 @@
-<div>
-    <nav>
-        <ul>
-            <li>
-                <a routerLink="graduation">GRADUATION</a>
-            </li>
-            <li>
-                <a routerLink="portrait">PORTRAIT</a>
-            </li>
-            <li>
-                <a routerLink='weddings'>WEDDINGS</a>
-            </li>
-        </ul>
-    </nav>
-    <div>
+<div class="portfolio-container">
+    <div class="portfolio-nav-container">
+        <nav class="portfolio-nav">
+            <ul>
+                <li>
+                    <a routerLink="/">HOME</a>
+                </li>
+                <li>
+                    <a routerLink="graduation">GRADUATION</a>
+                </li>
+                <li>
+                    <a routerLink="portrait">PORTRAIT</a>
+                </li>
+                <li>
+                    <a routerLink='weddings'>WEDDINGS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
         <router-outlet></router-outlet>
     </div>
 </div>

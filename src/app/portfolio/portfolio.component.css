@@ -1,0 +1,39 @@
+.portfolio-container{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.portfolio-nav-container{
+}
+
+.portfolio-nav ul{
+    padding: 0;
+    height: 100%;
+    inset: 0 82% 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30vh;
+    align-items: center;
+    position: fixed;
+    gap: 1.5rem;
+    background-color: black;
+}
+
+.portfolio-nav li{
+    list-style: none;
+}
+
+.portfolio-nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.main{
+    margin-left: 18%;
+}
