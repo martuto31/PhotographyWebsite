@@ -1,27 +1,41 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-}
+  :root{
+    --card: #c4aca1;
+  }
 
-.card-container{
+  body {
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+  }
+
+  .card-container{
+    background-color: #c4aca1;
+    /* backdrop-filter: blur(2rem); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 1.5rem; */
     padding-inline: min(10vmin, 1.5rem);
     /* padding-block: min(15vmin, 10rem); */
     width: 100%;
     height: 100vh;
-    justify-content: center;
     align-items: center;
+    justify-items: center;
   }
   
   .card{
-    border-radius: .7rem;
+    border-radius: 1rem;
+    border-style: hidden;
+    border-color: rgb(32, 32, 32);
     width: 25vw;
     height: 75vh;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px 2px, rgba(0, 0, 0, 0.12) 0px -12px 30px 2px, rgba(0, 0, 0, 0.12) 0px 4px 6px 2px, rgba(0, 0, 0, 0.17) 0px 12px 13px 2px, rgba(0, 0, 0, 0.09) 0px -3px 5px 2px;
+    -webkit-box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
+    -moz-box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
+    box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px 2px, rgba(0, 0, 0, 0.12) 0px -12px 30px 2px, rgba(0, 0, 0, 0.12) 0px 4px 6px 2px, rgba(0, 0, 0, 0.17) 0px 12px 13px 2px, rgba(0, 0, 0, 0.09) 0px -3px 5px 2px; */
   }
 
   .card p{
@@ -38,7 +52,7 @@ body {
 
   .card h1{
     font-size: min(2vw, 2rem);
-    color: #5f8db6;
+    color: rgb(32, 32, 32);
     line-height: 1;
     letter-spacing: .05rem;
     font-family: sans-serif;
@@ -60,7 +74,7 @@ body {
   }
   
   .card-btn{
-    background-color: #5f8db6;
+    background-color: rgb(32, 32, 32);
     font-size: min( 1.6vw, 1.2rem);
     color: white;
     font-family: sans-serif;
@@ -72,9 +86,17 @@ body {
   }
   
   .card-btn:hover{
-    background-color: #1c5c85;
+    background-color: black;
   }
 
   .bg-1{
     background-image: url(src\assets\img\Meri2.jpg);
+  }
+
+  .bg-2{
+    background-image: url(src\assets\img\Vanesa2.jpg);
+  }
+
+  .bg-3{
+    background-image: url(src\assets\img\bg.jpg);
   }
