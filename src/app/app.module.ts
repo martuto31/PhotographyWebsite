@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { WeddingComponent } from './portfolio/wedding/wedding.component';
 import { PortraitComponent } from './portfolio/portrait/portrait.component';
 import { GraduationComponent } from './portfolio/graduation/graduation.component';
+import { VanesaStanislavGalleryComponent } from './portfolio/wedding/vanesa-stanislav-gallery/vanesa-stanislav-gallery.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { GraduationComponent } from './portfolio/graduation/graduation.component
     WeddingComponent,
     PortraitComponent,
     GraduationComponent,
+    VanesaStanislavGalleryComponent,
   ],
   imports: [
     BrowserModule,
