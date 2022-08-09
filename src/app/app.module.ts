@@ -10,6 +10,10 @@ import { WeddingComponent } from './portfolio/wedding/wedding.component';
 import { PortraitComponent } from './portfolio/portrait/portrait.component';
 import { GraduationComponent } from './portfolio/graduation/graduation.component';
 import { VanesaStanislavGalleryComponent } from './portfolio/wedding/vanesa-stanislav-gallery/vanesa-stanislav-gallery.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { providePerformance,getPerformance } from '@angular/fire/performance';
 
 @NgModule({
   declarations: [
@@ -25,8 +29,12 @@ import { VanesaStanislavGalleryComponent } from './portfolio/wedding/vanesa-stan
   imports: [
     BrowserModule,
     AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
+    providePerformance(() => getPerformance()),
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

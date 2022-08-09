@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "phbyviki"
+  },
+  "targets": {
+    "phbyviki": {
+      "hosting": {
+        "VikiPhotography": [
+          "phbyviki"
+        ]
+      }
+    }
+  }
+}
