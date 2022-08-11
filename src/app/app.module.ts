@@ -14,6 +14,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
+import { MeriGraduationComponent } from './portfolio/graduation/meri-graduation/meri-graduation.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
     PortraitComponent,
     GraduationComponent,
     VanesaStanislavGalleryComponent,
+    MeriGraduationComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GraduationComponent } from './portfolio/graduation/graduation.component';
+import { MeriGraduationComponent } from './portfolio/graduation/meri-graduation/meri-graduation.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortraitComponent } from './portfolio/portrait/portrait.component';
 import { VanesaStanislavGalleryComponent } from './portfolio/wedding/vanesa-stanislav-gallery/vanesa-stanislav-gallery.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
     {path: 'weddings', component: WeddingComponent},
     {path: 'weddings-vanesa-stanislav-gallery', component: VanesaStanislavGalleryComponent},
     {path: 'graduation', component: GraduationComponent},
+    {path: 'graduation-meri', component: MeriGraduationComponent},
     {path: 'portrait', component: PortraitComponent},
   ]},
 ];
