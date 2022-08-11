@@ -30,7 +30,7 @@
     border-style: hidden;
     border-color: #d7e2e9;
     width: 25vw;
-    height: 75vh;
+    height: 80vh;
     overflow: hidden;
     -webkit-box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
     -moz-box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
@@ -44,7 +44,7 @@
     line-height: 1.4;
     color: rgb(150, 150, 150);
     letter-spacing: .1rem;
-    margin-top: min(1em, 5vmin);
+    margin-top: min(0.6em, 4vmin);
     width: 40ch;
     text-align: center;
     margin-inline: auto;
@@ -57,20 +57,20 @@
     line-height: 1;
     letter-spacing: .05rem;
     font-family: sans-serif;
-    margin-top: min(1em, 5vmin);
+    margin-top: min(0.6em, 4vmin);
     font-weight: 700;
     margin-inline: auto;
   }
   
   .card-image{
-    height: 50vmin;
+    height: 70vmin;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   
   .card-btn-container{
-    margin-block: min(2em, 9vmin);
+    margin-block: min(1.5em, 7vmin);
     margin-inline: auto;
   }
   
