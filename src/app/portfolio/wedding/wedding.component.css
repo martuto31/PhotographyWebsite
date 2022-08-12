@@ -17,8 +17,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* gap: 1.5rem; */
-    padding-inline: min(10vmin, 1.5rem);
-    /* padding-block: min(15vmin, 10rem); */
+    padding-inline: min(15vmin, 20rem);
+    padding-block: min(10vmin, 3rem);
     width: 100%;
     height: 100vh;
     align-items: center;
@@ -29,13 +29,96 @@
     border-radius: 1rem;
     border-style: hidden;
     border-color: #d7e2e9;
-    width: 25vw;
+    width: 30vw;
     height: 80vh;
     overflow: hidden;
     -webkit-box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
     -moz-box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
     box-shadow: -7px 9px 28px 12px rgba(0,0,0,0.67);
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px 2px, rgba(0, 0, 0, 0.12) 0px -12px 30px 2px, rgba(0, 0, 0, 0.12) 0px 4px 6px 2px, rgba(0, 0, 0, 0.17) 0px 12px 13px 2px, rgba(0, 0, 0, 0.09) 0px -3px 5px 2px; */
+  }
+
+  /* smaller than tablet sizes */
+  @media(max-width: 1024px){
+    .card p{
+      font-size: min(1.2vw, 0.7rem)!important;
+    }
+
+    .card h1{
+      font-size: min(2.8vw, 1.6rem)!important;
+    }
+  
+    .card-container{
+      gap: 5rem;
+    }
+
+    .card{
+      height: 100%;
+    }
+
+    /* .card-btn-container{
+      margin-block: 2vh;
+    } */
+  }
+
+  /* card width on tablet size */
+  @media(max-width: 768px){
+    .card{
+      width: 35vw;
+    }
+  }
+
+  /* phone sizes */
+  @media(max-width: 650px){
+    .card-container{
+      grid-template-columns: 1fr;
+      height: 100%;
+      background-attachment: fixed;
+    }
+
+    .card{
+      width: 50vw;
+    }
+
+    .card h1{
+      font-size: min(4.5vw ,1.4rem) !important;
+    }
+  
+    .card p{
+      font-size: min(1.8vw, .7rem) !important;
+    }
+  
+    .card-btn{
+      font-size: .9rem !important;
+      padding: .7rem !important;
+    }
+  }
+
+  /* extra small phone screens */
+  @media(max-width: 375px){
+    .card-container{
+      grid-template-columns: 1fr;
+      height: 100%;
+      background-attachment: fixed;
+    }
+
+    .card{
+      margin-block: 2rem;
+      width: 50vw;
+    }
+
+    .card h1{
+      font-size: min(4.5vw ,1.4rem) !important;
+    }
+  
+    .card p{
+      font-size: min(1.8vw, .7rem) !important;
+    }
+  
+    .card-btn{
+      font-size: .9rem !important;
+      padding: .7rem !important;
+    }
   }
 
   .card p{
