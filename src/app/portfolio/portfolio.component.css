@@ -5,13 +5,16 @@
     /* overflow: hidden; */
 }
 
-.portfolio-nav-container{
-}
+/* .portfolio-nav{
+    background-color: black;
+    z-index: 2;
+    position: fixed;
+} */
 
 .portfolio-nav ul{
     padding: 0;
     height: 100%;
-    inset: 0 82% 0 0;
+    inset: 0 80% 0 0;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -31,9 +34,53 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    font-size: 1.1rem;
+    font-size: min(1.8vw, 1.1rem);
 }
 
 .main{
-    margin-left: 18%;
+    margin-left: 20%;
 }
+
+.mobile-nav-toggle{    
+    display: none;
+}
+
+/* nav toggle for tablets and phones */
+  @media (max-width: 768px)
+  {
+    .mobile-nav-toggle{
+        display: block;
+        position: fixed;
+        z-index: 9;
+        background-repeat: no-repeat;
+        background: url(src\assets\img\bar-icon.png);
+        border: 0;
+        width: 24px;
+        aspect-ratio: 1;
+        top: 2rem;
+        left: 2rem;
+        font-family: FontAwesome;
+    }
+
+    .portfolio-nav ul{
+        transform: translateX(-150%);
+        transition: transform 350ms ease-out;
+        z-index: 8;
+        inset: 0 60% 0 0;
+        gap: 0;
+    }
+
+    .portfolio-nav a{
+        font-size: min(3.4vw, 1.4rem);
+        letter-spacing: 1px;
+        line-height: 2.5;
+    }
+
+    .main{
+        margin-left: 0;
+    }
+
+    .portfolio-nav ul[data-visible="true"]{
+        transform: translateX(0%);
+    }
+  }

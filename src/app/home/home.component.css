@@ -125,6 +125,7 @@ img.about-me{
   
     .about-me-text-container p{
       font-size: 1rem;
+      line-height: 1.6;
     }
   
     .btn{
@@ -197,10 +198,11 @@ img.about-me{
   @media(max-width: 600px) {
     .card-container{
       grid-template-columns: 1fr;
+      gap: 5rem;
     }
   
     .card{
-      width: 60vw;
+      width: 70vw;
       height: 100%;
     }
   
@@ -282,7 +284,7 @@ img.about-me{
   }
   
   .btn-container{
-    margin-top: min(7rem, 10vmin);
+    margin-block: min(7rem, 10vmin);
   }
   
   .btn{

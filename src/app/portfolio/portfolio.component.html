@@ -1,7 +1,12 @@
+<button (click)="onToggle()" class="mobile-nav-toggle" aria-controls="portfolio-container" aria-expanded="false">
+    <!-- <i class="fa-solid fa-bars"></i> -->
+    <span class="sr-only">Menu</span>
+  </button>
+
 <div class="portfolio-container">
     <div class="portfolio-nav-container">
-        <nav class="portfolio-nav">
-            <ul  id="portfolio-container">
+        <nav class="portfolio-nav" >
+            <ul id="portfolio-container" data-visible="false">
                 <li>
                     <a routerLink="/">HOME</a>
                 </li>
