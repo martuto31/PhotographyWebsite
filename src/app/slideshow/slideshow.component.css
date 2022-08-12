@@ -114,7 +114,7 @@
     text-decoration: none;
     color: #333333;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 1.2rem;
     position: relative;
     z-index: 1;
@@ -286,7 +286,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    transition: all 1s linear;
+    transition: 1s linear;
   }
 
 .bg-1{
