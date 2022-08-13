@@ -107,11 +107,11 @@
     }
 
     .card h1{
-      font-size: min(4.7vw ,1.5rem) !important;
+      font-size: min(4.8vw ,1.5rem) !important;
     }
   
     .card p{
-      font-size: min(2vw, .8rem) !important;
+      font-size: min(2.2vw, .8rem) !important;
     }
   
     .card-btn{
