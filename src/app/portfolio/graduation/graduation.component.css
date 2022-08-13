@@ -130,6 +130,7 @@
     width: 40ch;
     text-align: center;
     margin-inline: auto;
+    margin-bottom: 0;
   }
 
   .card h1{
