@@ -12,12 +12,14 @@ export class SlideshowComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.slideShow(0);
   }
 
-  slideShow(n: number){
+  public slideIndex: number = 1;
+
+  nextSlideShow(){
     var slides = document.getElementById("slides");
-    var slideIndex = n;
+    this.slideIndex++;
+    console.log(this.slideIndex)
     var slidesNumber = 3;
 
     // for(var i = 0; i < slides.length; i++)
@@ -25,18 +27,38 @@ export class SlideshowComponent implements OnInit {
     //   slides[i].style.display = "none";
     // }
 
-    slideIndex++;
     //only works with 3 pictures, FIX NEEDED!! - Bad practice
-    if(slideIndex > slidesNumber)
+    if(this.slideIndex > slidesNumber)
     {
-      slideIndex = 1;
+      this.slideIndex = 1;
       slides?.classList.add("bg-1");
       slides?.classList.remove("bg-3");
     }
-    slides?.classList.add("bg-" + slideIndex);
-    slides?.classList.remove("bg-" + (slideIndex-1));
+    else{
+      slides?.classList.add("bg-" + (this.slideIndex));
+      slides?.classList.remove("bg-" + (this.slideIndex-1));
+    }
     // slides[slideIndex - 1].style.display = "flex";
-    setTimeout(() => {this.slideShow(slideIndex)}, 3500);
+    // setTimeout(() => {this.slideShow(slideIndex)}, 3500);
+  }
+
+  previousSlideShow(){
+    var slides = document.getElementById("slides");
+    this.slideIndex--;
+    console.log(this.slideIndex)
+    var slidesNumber = 3;
+
+    //only works with 3 pictures, FIX NEEDED!! - Bad practice
+    if(this.slideIndex < 1)
+    {
+      this.slideIndex = slidesNumber;
+      slides?.classList.add("bg-3");
+      slides?.classList.remove("bg-1");
+    }
+    else{
+      slides?.classList.add("bg-" + (this.slideIndex));
+      slides?.classList.remove("bg-" + (this.slideIndex+1));
+    }
   }
 
   makeNavbarActive(id: number){ 
@@ -48,10 +70,6 @@ export class SlideshowComponent implements OnInit {
     }
     navs[id].classList.add("pricing-nav-active");
   }
-
-  // currentSlide(n: number) {
-  //   this.slideShow(n);
-  // }
 
   //Hamburger menu
   onToggle(){

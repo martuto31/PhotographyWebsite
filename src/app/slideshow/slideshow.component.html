@@ -1,27 +1,7 @@
-<!-- <div class="home-container home-bg bg-2">
-    <nav class="home-nav">
-      <ul>
-        <li>
-          <a class="" href="#">HOME</a>
-        </li>
-        <li>
-          <a class="" href="#">ABOUT ME</a>
-        </li>
-        <li>
-          <a class="" href="#">PORTFOLIO</a>
-        </li>
-        <li>
-          <a class="" href="#">PRICING</a>
-        </li>
-        <li>
-          <a class="" href="#">CONTACT ME</a>
-        </li>
-      </ul>
-    </nav>
-</div> -->
-
 <div class="slideshow-container">
     <div class="slides imgStrech bg-1" id="slides">
+        <button class="slide-btn btn-left" (click)="previousSlideShow()">&#10094;</button>
+        <button class="slide-btn btn-right" (click)="nextSlideShow()">&#10095;</button>
         <div class="pictureNavbar">
             <div class="brand-container">
               <nav class="brand">
@@ -71,6 +51,8 @@
               </ul>
             </nav>
 
+            
+
             <button (click)="onToggle()" class="mobile-nav-toggle" aria-controls="home-nav" aria-expanded="false">
               <!-- <i class="fa-solid fa-bars"></i> -->
               <span class="sr-only">Menu</span>
@@ -100,113 +82,3 @@
             </nav>
         </div>    
     </div>
-    <!-- <div class="slides imgStrech bg-2">
-      <div class="pictureNavbar">
-        <div class="brand-container">
-          <nav class="brand">
-            <ul>
-              <li>
-                <a title="Facebook" href="https://www.facebook.com/phbyviki-109958021529934"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a title="Instagram" href="https://www.instagram.com/_phbyviki/"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-            </ul>
-            <span class="logo"></span>
-            <ul>
-              <li>
-                <a title="Youtube" href="https://www.youtube.com/channel/UCVPAg5EsJb2nCYjK4_5yOcw"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a title="Github" href="https://github.com/martuto31/PhotographyWebsite"><i class="fa-brands fa-github"></i></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <button class="mobile-nav-toggle" aria-controls="home-nav2" aria-expanded="false">
-          <span class="sr-only">Menu</span>
-        </button>
-
-        <nav class="home-nav-container" id="home-nav2" data-visible="false">
-          <ul class="home-nav">
-            <li>
-              <a class="" href="#">Home</a>
-            </li>
-            <li>
-              <a class="" href="#">About me</a>
-            </li>
-            <li>
-              <a class="" href="#">Pricing</a>
-            </li>
-          </ul>
-          <span class="logo"></span>
-          <ul class="home-nav">
-            <li>
-              <a class="" href="#">Contacts</a>
-            </li>
-            <li>
-              <a class="" href="#">My work</a>
-            </li>
-            <li>
-              <a class="" href="#">Info</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    
-    <div class="slides imgStrech bg-3">
-      <div class="pictureNavbar">
-        <div class="brand-container">
-          <nav class="brand">
-            <ul>
-              <li>
-                <a title="Facebook" href="https://www.facebook.com/phbyviki-109958021529934"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a title="Instagram" href="https://www.instagram.com/_phbyviki/"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-            </ul>
-            <span class="logo"></span>
-            <ul>
-              <li>
-                <a title="Youtube" href="https://www.youtube.com/channel/UCVPAg5EsJb2nCYjK4_5yOcw"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a title="Github" href="https://github.com/martuto31/PhotographyWebsite"><i class="fa-brands fa-github"></i></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <button class="mobile-nav-toggle" aria-controls="home-nav3" aria-expanded="false">
-          <span class="sr-only">Menu</span>
-        </button>
-
-        <nav class="home-nav-container" id="home-nav3" data-visible="false">
-          <ul class="home-nav">
-            <li>
-              <a class="" href="#">Home</a>
-            </li>
-            <li>
-              <a class="" href="#">About me</a>
-            </li>
-            <li>
-              <a class="" href="#">Pricing</a>
-            </li>
-          </ul>
-          <span class="logo"></span>
-          <ul class="home-nav">
-            <li>
-              <a class="" href="#">Contacts</a>
-            </li>
-            <li>
-              <a class="" href="#">My work</a>
-            </li>
-            <li>
-              <a class="" href="#">Info</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div> -->
-  </div>

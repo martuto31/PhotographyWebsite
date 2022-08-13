@@ -129,8 +129,9 @@ img.about-me{
     }
   
     .btn{
-      padding: 2px;
-      font-size: 1.4rem;
+      padding: min(.6rem, 1.8vmin)!important;
+      font-size: 1.05rem!important;
+      letter-spacing: 0.8!important;
     }
   }
   

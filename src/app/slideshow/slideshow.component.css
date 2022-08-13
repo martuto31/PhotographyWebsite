@@ -289,16 +289,39 @@
     transition: 1s linear;
   }
 
+.slide-btn{
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: min(5vw, 1.35rem);
+}
+
+.btn-left{
+  position: absolute;
+  top: 50%;
+  left: 0rem;
+}
+
+.btn-right{
+  position:absolute;
+  top: 50%;
+  right: 0rem;
+}
+
 .bg-1{
-    background-image:url(src\assets\img\Danube2.jpg);
+  background-image:url(src\assets\img\JulyMorning.jpg);
 }
 
 .bg-2{
-    background-image:url(src\assets\img\JulyMorning.jpg);
+  background-image:url(src\assets\img\Danube2.jpg);
 }
 
 .bg-3{
-    background-image:url(src\assets\img\Danube.jpg);
+  background-image:url(src\assets\img\Danube.jpg);
 }
 
   .next {
