@@ -15,6 +15,8 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { MeriGraduationComponent } from './portfolio/graduation/meri-graduation/meri-graduation.component';
+import { KrisiGalleryComponent } from './portfolio/portrait/krisi-gallery/krisi-gallery.component';
+import { KatiGalleryComponent } from './portfolio/portrait/kati-gallery/kati-gallery.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { MeriGraduationComponent } from './portfolio/graduation/meri-graduation/
     GraduationComponent,
     VanesaStanislavGalleryComponent,
     MeriGraduationComponent,
+    KrisiGalleryComponent,
+    KatiGalleryComponent,
   ],
   imports: [
     BrowserModule,

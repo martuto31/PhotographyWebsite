@@ -28,7 +28,6 @@ export class PortfolioComponent implements OnInit {
       primaryNav?.setAttribute("data-visible", "false");
       navToggle?.setAttribute("aria-expanded", "fa;se");
     }
-    console.log(visibility);
   }
 
 }

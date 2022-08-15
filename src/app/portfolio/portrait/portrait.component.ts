@@ -11,6 +11,7 @@ export class PortraitComponent implements OnInit {
 
   ngOnInit(): void {
     this.changeNavBg();
+    this.changeToggleColour();
   }
 
   changeNavBg(){
@@ -18,6 +19,14 @@ export class PortraitComponent implements OnInit {
     if(element != undefined)
     {
       element.style.backgroundColor = '#D2738f';
+    }
+  }
+
+  changeToggleColour(){
+    var element = document.getElementById('portfolio-toggle-btn');
+    if(element != undefined)
+    {
+      element.style.color = 'black';
     }
   }
 }

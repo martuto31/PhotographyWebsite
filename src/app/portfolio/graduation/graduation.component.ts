@@ -11,6 +11,7 @@ export class GraduationComponent implements OnInit {
 
   ngOnInit(): void {
     this.changeNavBg();
+    // this.changeToggleColour();
   }
 
   changeNavBg(){
@@ -20,4 +21,12 @@ export class GraduationComponent implements OnInit {
       element.style.backgroundColor = 'black';
     }
   }
+
+  // changeToggleColour(){
+  //   var element = document.getElementById('portfolio-toggle-btn');
+  //   if(element != undefined)
+  //   {
+  //     element.style.backgroundImage = "url(" + "https://icon-library.com/icon/menu-icon-white-png-3.html.html" + ")";
+  //   }
+  // }
 }

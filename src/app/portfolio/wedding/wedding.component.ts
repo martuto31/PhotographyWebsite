@@ -12,6 +12,7 @@ export class WeddingComponent implements OnInit {
 
   ngOnInit(): void {
     this.changeNavBg();
+    this.changeToggleColour();
   }
 
   changeNavBg(){
@@ -19,6 +20,14 @@ export class WeddingComponent implements OnInit {
     if(element != undefined)
     {
       element.style.backgroundColor = '#415a80';
+    }
+  }
+
+  changeToggleColour(){
+    var element = document.getElementById('portfolio-toggle-btn');
+    if(element != undefined)
+    {
+      element.style.color = 'black';
     }
   }
 }

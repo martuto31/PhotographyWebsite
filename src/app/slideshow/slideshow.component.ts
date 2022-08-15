@@ -45,7 +45,6 @@ export class SlideshowComponent implements OnInit {
   previousSlideShow(){
     var slides = document.getElementById("slides");
     this.slideIndex--;
-    console.log(this.slideIndex)
     var slidesNumber = 3;
 
     //only works with 3 pictures, FIX NEEDED!! - Bad practice
@@ -88,6 +87,5 @@ export class SlideshowComponent implements OnInit {
       primaryNav?.setAttribute("data-visible", "false");
       navToggle?.setAttribute("aria-expanded", "fa;se");
     }
-    console.log(visibility);
   }
 }
