@@ -13,13 +13,15 @@ export class WeddingComponent implements OnInit {
   ngOnInit(): void {
     this.changeNavBg();
     this.changeToggleColour();
+    this.changeMobileNavBg();
   }
 
   changeNavBg(){
     var element = document.getElementById('portfolio-container');
     if(element != undefined)
     {
-      element.style.backgroundColor = '#415a80';
+      element.classList.remove("bg-portrait", "bg-graduation");
+      element.classList.add("bg-wedding");
     }
   }
 
@@ -28,6 +30,15 @@ export class WeddingComponent implements OnInit {
     if(element != undefined)
     {
       element.style.color = 'black';
+    }
+  }
+
+  changeMobileNavBg(){
+    var element = document.getElementById('mobile-nav');
+    if(element != undefined)
+    {
+      element.classList.remove("bg-portrait", "bg-graduation");
+      element.classList.add("bg-wedding");
     }
   }
 }

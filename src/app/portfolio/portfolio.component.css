@@ -2,6 +2,7 @@
     background-color: rgb(255, 255, 255);
     height: 100vh;
     width: 100%;
+    margin-top: min(5rem, 24vw);
     /* overflow: hidden; */
 }
 
@@ -22,7 +23,7 @@
     align-items: center;
     position: fixed;
     gap: 1.5rem;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .portfolio-nav li{
@@ -45,20 +46,24 @@
     display: none;
 }
 
+.mobile-nav{
+    display: none;
+}
+
 /* nav toggle for tablets and phones */
   @media (max-width: 768px)
   {
     .mobile-nav-toggle{
         display: block;
         position: fixed;
-        z-index: 9;
+        z-index: 10;
         background-repeat: no-repeat;
         background: url(src\assets\img\bar-icon.png);
         border: 0;
         width: 24px;
         aspect-ratio: 1;
-        top: 1.4rem;
-        left: 1.4rem;
+        top: 1.5rem;
+        left: 1.5rem;
         font-family: FontAwesome;
     }
 
@@ -83,4 +88,26 @@
     .portfolio-nav ul[data-visible="true"]{
         transform: translateX(0%);
     }
+
+    .mobile-nav{
+        display: block;
+        padding-bottom: min(5rem, 24vw);
+        margin-bottom: 20vw;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 9;
+    }
+  }
+
+  .bg-wedding{
+    background-color: #415a80;
+  }
+
+  .bg-portrait{
+    background-color: #D2738f;
+  }
+  
+  .bg-graduation{
+    background-color: black;
   }

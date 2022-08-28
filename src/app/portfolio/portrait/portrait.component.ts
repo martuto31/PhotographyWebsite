@@ -12,13 +12,15 @@ export class PortraitComponent implements OnInit {
   ngOnInit(): void {
     this.changeNavBg();
     this.changeToggleColour();
+    this.changeMobileNavBg();
   }
 
   changeNavBg(){
     var element = document.getElementById('portfolio-container');
     if(element != undefined)
     {
-      element.style.backgroundColor = '#D2738f';
+      element.classList.remove("bg-graduation", "bg-wedding");
+      element.classList.add("bg-portrait");
     }
   }
 
@@ -27,6 +29,15 @@ export class PortraitComponent implements OnInit {
     if(element != undefined)
     {
       element.style.color = 'black';
+    }
+  }
+
+  changeMobileNavBg(){
+    var element = document.getElementById('mobile-nav');
+    if(element != undefined)
+    {
+      element.classList.remove("bg-graduation", "bg-wedding");
+      element.classList.add("bg-portrait");
     }
   }
 }

@@ -26,7 +26,7 @@ export class PortfolioComponent implements OnInit {
     else if(visibility === "true")
     {
       primaryNav?.setAttribute("data-visible", "false");
-      navToggle?.setAttribute("aria-expanded", "fa;se");
+      navToggle?.setAttribute("aria-expanded", "false");
     }
   }
 

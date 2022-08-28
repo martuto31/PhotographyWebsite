@@ -11,6 +11,7 @@ export class GraduationComponent implements OnInit {
 
   ngOnInit(): void {
     this.changeNavBg();
+    this.changeMobileNavBg();
     // this.changeToggleColour();
   }
 
@@ -18,7 +19,17 @@ export class GraduationComponent implements OnInit {
     var element = document.getElementById('portfolio-container');
     if(element != undefined)
     {
-      element.style.backgroundColor = 'black';
+      element.classList.remove("bg-portrait", "bg-wedding");
+      element.classList.add("bg-graduation");
+    }
+  }
+
+  changeMobileNavBg(){
+    var element = document.getElementById('mobile-nav');
+    if(element != undefined)
+    {
+      element.classList.remove("bg-portrait", "bg-wedding");
+      element.classList.add("bg-graduation");
     }
   }
 
