@@ -58,7 +58,7 @@
         position: fixed;
         z-index: 10;
         background-repeat: no-repeat;
-        background: url(src\assets\img\bar-icon.png);
+        background: url(src\assets\img\bar-icon-white.png);
         border: 0;
         width: 24px;
         aspect-ratio: 1;
