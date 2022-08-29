@@ -292,7 +292,7 @@ img.about-me{
     background-color: #5f8db6;
     color: white;
     font-family: sans-serif;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     padding: min(.8rem, 2vmin);
     box-sizing: border-box;
   }
