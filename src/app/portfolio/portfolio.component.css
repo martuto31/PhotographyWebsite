@@ -5,6 +5,24 @@
     /* overflow: hidden; */
 }
 
+.links-nav ul{
+    padding: 0;
+    height: 100%;
+    inset: 90% 80% 0% 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    gap: 1.5rem;
+    color: white;
+    justify-content: center;
+}
+
+.fa-brands{
+    color: white;
+}
+
 /* .portfolio-nav{
     background-color: black;
     z-index: 2;
@@ -19,6 +37,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 30vh;
+    /* justify-content: center; */
     align-items: center;
     position: fixed;
     gap: 1.5rem;
