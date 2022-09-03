@@ -48,6 +48,42 @@ body{
     grid-column: span 2;
 }
 
+.popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span{
+    position: absolute;
+    top: 0; right: .8rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img{
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: .45rem;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media(max-width: 768px){
+    .popup-image img{
+        width: 95%;
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .image-grid{
