@@ -26,7 +26,7 @@ export class VanesaStanislavGalleryComponent implements OnInit {
     }
 
     function popUp(el: any){
-      (document.querySelector('.popup-image') as HTMLInputElement).style.display = 'block';
+      (document.querySelector('.popup-image') as HTMLInputElement).style.display = 'flex';
       var imageSrc = (document.getElementById(el.target.id) as HTMLImageElement).src;
       if(imageSrc != undefined)
       {

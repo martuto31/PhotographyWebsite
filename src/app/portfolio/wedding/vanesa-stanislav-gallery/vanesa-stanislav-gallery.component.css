@@ -50,12 +50,17 @@ body{
 
 .popup-image{
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0; left: 0;
     background: rgba(0,0,0 0.9);
     height: 100%;
     width: 100%;
     z-index: 100;
     display: none;
+    -webkit-backdrop-filter: blur(.5rem);
+    backdrop-filter: blur(.5rem);
 }
 
 .popup-image span{
@@ -69,20 +74,19 @@ body{
 }
 
 .popup-image img{
-    position: absolute;
-    top: 50%; right: 50%;
-    transform: translate(-50%, -50%);
     border: 5px solid white;
     border-radius: .45rem;
-    width: 750px;
+    max-width: 75%;
+    max-height: 90%;
+    /* width: min(45vw, 35rem); */
     object-fit: cover;
 }
 
-@media(max-width: 768px){
+/* @media(max-width: 768px){
     .popup-image img{
-        width: 95%;
+        width: 85%;
     }
-}
+} */
 
 @media screen and (max-width: 1024px)
 {

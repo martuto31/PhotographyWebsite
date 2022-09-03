@@ -257,6 +257,7 @@
   .home-nav-container-mobile{
     display: flex;
     /* background-color: steelblue; */
+    -webkit-backdrop-filter: blur(2rem);
     backdrop-filter: blur(2rem);
     inset: 0 0 0 50%;
     flex-direction: column;
