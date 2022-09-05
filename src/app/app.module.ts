@@ -18,6 +18,7 @@ import { MeriGraduationComponent } from './portfolio/graduation/meri-graduation/
 import { KrisiGalleryComponent } from './portfolio/portrait/krisi-gallery/krisi-gallery.component';
 import { KatiGalleryComponent } from './portfolio/portrait/kati-gallery/kati-gallery.component';
 import { VanesaGalleryComponent } from './portfolio/graduation/vanesa-gallery/vanesa-gallery.component';
+import { VictoriaPetarGalleryComponent } from './portfolio/wedding/victoria-petar-gallery/victoria-petar-gallery.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { VanesaGalleryComponent } from './portfolio/graduation/vanesa-gallery/va
     KrisiGalleryComponent,
     KatiGalleryComponent,
     VanesaGalleryComponent,
+    VictoriaPetarGalleryComponent,
   ],
   imports: [
     BrowserModule,

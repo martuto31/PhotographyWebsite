@@ -10,6 +10,7 @@ import { KatiGalleryComponent } from './portfolio/portrait/kati-gallery/kati-gal
 import { KrisiGalleryComponent } from './portfolio/portrait/krisi-gallery/krisi-gallery.component';
 import { PortraitComponent } from './portfolio/portrait/portrait.component';
 import { VanesaStanislavGalleryComponent } from './portfolio/wedding/vanesa-stanislav-gallery/vanesa-stanislav-gallery.component';
+import { VictoriaPetarGalleryComponent } from './portfolio/wedding/victoria-petar-gallery/victoria-petar-gallery.component';
 import { WeddingComponent } from './portfolio/wedding/wedding.component';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'portfolio', component: PortfolioComponent, children:[
     {path: 'weddings', component: WeddingComponent},
     {path: 'weddings-vanesa-stanislav-gallery', component: VanesaStanislavGalleryComponent},
+    {path: 'weddings-victoria-petar-gallery', component: VictoriaPetarGalleryComponent},
     {path: 'graduation', component: GraduationComponent},
     {path: 'graduation-meri-gallery', component: MeriGraduationComponent},
     {path: 'graduation-vanesa-gallery', component: VanesaGalleryComponent},

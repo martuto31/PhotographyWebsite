@@ -313,15 +313,19 @@
   right: 0rem;
 }
 
+/* .bg-1{
+  background-image:url(src\assets\img\bg-wed-love.jpg);
+} */
+
 .bg-1{
   background-image:url(src\assets\img\JulyMorning.jpg);
 }
 
-.bg-2{
+.bg-3{
   background-image:url(src\assets\img\Danube2.jpg);
 }
 
-.bg-3{
+.bg-4{
   background-image:url(src\assets\img\Danube.jpg);
 }
 
