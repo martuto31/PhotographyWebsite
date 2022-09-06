@@ -11,7 +11,7 @@
   .card-container{
     background-color: #d7e2e9;
     /* backdrop-filter: blur(2rem); */
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
