@@ -88,6 +88,29 @@ body{
     }
 } */
 
+.slide-btn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: min(5vw, 1.35rem);
+}
+
+.btn-left{
+    position:absolute;
+    top: 45%;
+    left: 11%;
+}
+
+.btn-right{
+    position: absolute;
+    top: 45%;
+    right: 11%;
+}
+
 @media screen and (max-width: 1024px)
 {
     .image-grid{

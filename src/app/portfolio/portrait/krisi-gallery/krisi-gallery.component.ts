@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KrisiGalleryComponent implements OnInit {
 
+  public id: number = 1;
+  public maxId: number = 26;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -19,7 +22,9 @@ export class KrisiGalleryComponent implements OnInit {
     {
       if(imgs[i] != undefined)
       {
-        imgs[i].addEventListener("click", function(el){
+        imgs[i].addEventListener("click", (el: any) => {
+          this.id = parseInt(el.target.id);
+          console.log(this.id);
           popUp(el);
         }, false)
       }
@@ -44,4 +49,41 @@ export class KrisiGalleryComponent implements OnInit {
     }
   }
 
+  nextImage(){
+    console.log(this.id);
+    console.log(this.maxId);
+    if((this.id + 1) > this.maxId)
+    {
+      this.id = 1;
+      console.log('in');
+    }
+    else
+    {
+      console.log('out');
+      this.id++;
+    }
+    var nextImageSrc = (document.getElementById(this.id.toString()) as HTMLImageElement).src;
+
+    if(nextImageSrc != undefined)
+    {
+      document.getElementById('popup-image')?.setAttribute('src', nextImageSrc);
+    }
+  }
+
+  previousImage(){
+    if((this.id - 1) < 1)
+    {
+      this.id = this.maxId;
+    }
+    else
+    {
+      this.id--;
+    }
+    var previousImageSrc = (document.getElementById(this.id.toString()) as HTMLImageElement).src;
+
+    if(previousImageSrc != undefined)
+    {
+      document.getElementById('popup-image')?.setAttribute('src', previousImageSrc);
+    }
+  }
 }
