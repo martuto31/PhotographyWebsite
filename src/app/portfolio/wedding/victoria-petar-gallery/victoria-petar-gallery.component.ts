@@ -26,7 +26,6 @@ export class VictoriaPetarGalleryComponent implements OnInit {
       {
         imgs[i].addEventListener("click", (el: any) => {
           this.id = parseInt(el.target.id);
-          console.log(this.id);
           popUp(el);
         }, false)
       }
@@ -52,16 +51,12 @@ export class VictoriaPetarGalleryComponent implements OnInit {
   }
 
   nextImage(){
-    console.log(this.id);
-    console.log(this.maxId);
     if((this.id + 1) > this.maxId)
     {
       this.id = 1;
-      console.log('in');
     }
     else
     {
-      console.log('out');
       this.id++;
     }
     var nextImageSrc = (document.getElementById(this.id.toString()) as HTMLImageElement).src;
