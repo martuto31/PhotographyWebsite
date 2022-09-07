@@ -313,20 +313,44 @@
   right: 0rem;
 }
 
-/* .bg-1{
-  background-image:url(src\assets\img\bg-wed-love.jpg);
-} */
-
 .bg-1{
   background-image:url(src\assets\img\JulyMorning.jpg);
 }
 
-.bg-3{
+.bg-2{
   background-image:url(src\assets\img\Danube2.jpg);
 }
 
-.bg-4{
+.bg-3{
   background-image:url(src\assets\img\Danube.jpg);
+}
+
+.bg-4{
+  background-image:url(src\assets\img\victoria-petar-wed-bg1.jpg);
+}
+
+.bg-5{
+  background-image:url(src\assets\img\victoria-petar-wed-bg2.jpg);
+}
+
+.bg-6{
+  background-image:url(src\assets\img\victoria-petar-wed-bg3.jpg);
+}
+
+.bg-7{
+  background-image:url(src\assets\img\victoria-petar-wed-bg4.jpg);
+}
+
+.bg-8{
+  background-image:url(src\assets\img\victoria-petar-wed-bg5.jpg);
+}
+
+.bg-9{
+  background-image:url(src\assets\img\vanesa-stanislav-wed-bg1.jpg);
+}
+
+.bg-10{
+  background-image:url(src\assets\img\vanesa-stanislav-wed-bg2.jpg);
 }
 
   .next {

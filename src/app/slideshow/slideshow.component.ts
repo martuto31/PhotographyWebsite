@@ -19,8 +19,7 @@ export class SlideshowComponent implements OnInit {
   nextSlideShow(){
     var slides = document.getElementById("slides");
     this.slideIndex++;
-    console.log(this.slideIndex)
-    var slidesNumber = 3;
+    var slidesNumber = 10;
 
     // for(var i = 0; i < slides.length; i++)
     // {
@@ -32,7 +31,7 @@ export class SlideshowComponent implements OnInit {
     {
       this.slideIndex = 1;
       slides?.classList.add("bg-1");
-      slides?.classList.remove("bg-3");
+      slides?.classList.remove("bg-10");
     }
     else{
       slides?.classList.add("bg-" + (this.slideIndex));
@@ -45,13 +44,13 @@ export class SlideshowComponent implements OnInit {
   previousSlideShow(){
     var slides = document.getElementById("slides");
     this.slideIndex--;
-    var slidesNumber = 3;
+    var slidesNumber = 10;
 
     //only works with 3 pictures, FIX NEEDED!! - Bad practice
     if(this.slideIndex < 1)
     {
       this.slideIndex = slidesNumber;
-      slides?.classList.add("bg-3");
+      slides?.classList.add("bg-10");
       slides?.classList.remove("bg-1");
     }
     else{
