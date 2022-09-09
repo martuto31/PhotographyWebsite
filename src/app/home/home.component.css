@@ -100,7 +100,66 @@ img.about-me{
     font-size: 1.1rem;
     color: #686565;
   }
+
+    
+  .card-wraper{
+    display: flex;
+    background-color: rgb(241, 238, 238);
+    max-width: 100%;
+    min-height: 100vh;
+    width: 100vw;
+  }
   
+  h3{
+    font-size: min(4rem, 11vmin);
+    color: #5f8db6;
+    line-height: 1;
+    margin-bottom: min(1.5em, 9vmin);
+    font-weight: 700;
+  }
+
+  .btn-container{
+    margin-block: min(7rem, 10vmin);
+  }
+  
+  .btn{
+    background-color: #5f8db6;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: .05em;
+    padding: min(.8rem, 2vmin);
+    box-sizing: border-box;
+  }
+  
+  .btn:hover{
+    background-color: #1c5c85;
+  }
+
+  /* 4k */
+  @media (min-width: 2440px){
+    .about-me-text-container h3{
+      font-size: min(9.5rem, 6.1vw);
+    }
+
+    .about-me-text-container p{
+      font-size: min(1.8rem, 1.55vw);
+      line-height: 1.7;
+    }
+    
+    .about-me-text-container{
+      max-width: 80ch;
+    }
+
+    .btn-container{
+      font-size: min(2.7rem, 2.45vw);
+    }
+
+    .btn{
+      letter-spacing: 0.8 !important;
+      padding: min(1.3rem, 1.5vw);
+    }
+  }
+
   @media(min-width: 2000px)
   {
     .about-me-container{
@@ -133,22 +192,6 @@ img.about-me{
       font-size: 1.05rem!important;
       letter-spacing: 0.8!important;
     }
-  }
-  
-  .card-wraper{
-    display: flex;
-    background-color: rgb(241, 238, 238);
-    max-width: 100%;
-    min-height: 100vh;
-    width: 100vw;
-  }
-  
-  h3{
-    font-size: min(4rem, 11vmin);
-    color: #5f8db6;
-    line-height: 1;
-    margin-bottom: min(1.5em, 9vmin);
-    font-weight: 700;
   }
   
   /* Portfolio section */
@@ -282,23 +325,6 @@ img.about-me{
   
   .gr-3{
     background-image: url(src\assets\img\wedding2.jpg);
-  }
-  
-  .btn-container{
-    margin-block: min(7rem, 10vmin);
-  }
-  
-  .btn{
-    background-color: #5f8db6;
-    color: white;
-    font-family: sans-serif;
-    letter-spacing: .05em;
-    padding: min(.8rem, 2vmin);
-    box-sizing: border-box;
-  }
-  
-  .btn:hover{
-    background-color: #1c5c85;
   }
   
   .card-img{
