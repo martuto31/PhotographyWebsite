@@ -175,7 +175,7 @@ img.about-me{
     }
 
     .btn-container{
-      font-size: min(2.5rem, 2.3vw);
+      font-size: min(2.2rem, 2.8vmin);
     }
 
     .btn{
