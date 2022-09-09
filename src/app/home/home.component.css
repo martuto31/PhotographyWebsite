@@ -285,15 +285,16 @@ img.about-me{
   
   @media (min-width: 1920px) and (max-width: 2550px){
     .card h1{
-      font-size: 3vmin;
+      font-size: min(3.3vmin, 3rem);
     }
 
     .card p{
-      font-size: min(2.5vw,1rem) !important;
+      font-size: min(2.5vmin,1.1rem) !important;
+      margin-bottom: min(1em, 5vmin);
     }
   
     .card-btn{
-      font-size: 1.2rem !important;
+      font-size: min(1.8vmin, 1.6rem) !important;
     }
   }
 
