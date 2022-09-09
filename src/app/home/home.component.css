@@ -214,56 +214,7 @@ img.about-me{
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px 2px, rgba(0, 0, 0, 0.12) 0px -12px 30px 2px, rgba(0, 0, 0, 0.12) 0px 4px 6px 2px, rgba(0, 0, 0, 0.17) 0px 12px 13px 2px, rgba(0, 0, 0, 0.09) 0px -3px 5px 2px;
   }
-  
-  @media(max-width: 950px) {
-    .card-container{
-      grid-template-columns: 1fr;
-      width: 100vw;
-    }
-  
-    .card{
-      width: 60vw;
-      height: 100%;
-    }
-  
-    .card h1{
-      font-size: min(5vw, 2.3rem) !important;
-    }
-  
-    .card p{
-      font-size: min(2.5vw,1rem) !important;
-    }
-  
-    .card-btn{
-      font-size: 1.2rem !important;
-    }
-  }
-  
-  @media(max-width: 600px) {
-    .card-container{
-      grid-template-columns: 1fr;
-      gap: 5rem;
-    }
-  
-    .card{
-      width: 70vw;
-      height: 100%;
-    }
-  
-    .card h1{
-      font-size: min(4.5vw ,1.4rem) !important;
-    }
-  
-    .card p{
-      font-size: min(2.5vw, .8rem) !important;
-    }
-  
-    .card-btn{
-      font-size: .9rem !important;
-      padding: .7rem !important;
-    }
-  }
-  
+
   .card h1{
     font-size: min(3.2vmin, 2rem);
     color: #5f8db6;
@@ -314,6 +265,85 @@ img.about-me{
   
   .card-btn:hover{
     background-color: #1c5c85;
+  }
+
+  /* 4k */
+  @media (min-width: 2550px) {
+    .card h1{
+      font-size: min(4rem, 4vmin);
+    }
+
+    .card p{
+      font-size: min(1.5vmin, 1.6rem) !important;
+      margin-bottom: min(1em, 5vmin);
+    }
+  
+    .card-btn{
+      font-size: min(2.25vmin, 2rem) !important;
+    }
+  }
+  
+  @media (min-width: 1920px) and (max-width: 2550px){
+    .card h1{
+      font-size: 3vmin;
+    }
+
+    .card p{
+      font-size: min(2.5vw,1rem) !important;
+    }
+  
+    .card-btn{
+      font-size: 1.2rem !important;
+    }
+  }
+
+  @media(max-width: 950px) {
+    .card-container{
+      grid-template-columns: 1fr;
+      width: 100vw;
+    }
+  
+    .card{
+      width: 60vw;
+      height: 100%;
+    }
+  
+    .card h1{
+      font-size: min(5vw, 2.3rem) !important;
+    }
+  
+    .card p{
+      font-size: min(2.5vw,1rem) !important;
+    }
+  
+    .card-btn{
+      font-size: 1.2rem !important;
+    }
+  }
+  
+  @media(max-width: 600px) {
+    .card-container{
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+  
+    .card{
+      width: 70vw;
+      height: 100%;
+    }
+  
+    .card h1{
+      font-size: min(4.5vw ,1.4rem) !important;
+    }
+  
+    .card p{
+      font-size: min(2.5vw, .8rem) !important;
+    }
+  
+    .card-btn{
+      font-size: .9rem !important;
+      padding: .7rem !important;
+    }
   }
   
   .gr-1{
