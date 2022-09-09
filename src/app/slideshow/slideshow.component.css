@@ -131,6 +131,9 @@
       font-size: min(2.25rem, 1.35vw);
       padding: 5px !important;
     }
+    .slide-btn{
+      font-size: 2.5rem !important;
+    }
   }
 
   @media(max-width: 1440px){
