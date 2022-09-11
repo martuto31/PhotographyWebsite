@@ -123,7 +123,7 @@
   }
 
   /* 4K */
-  @media (min-width: 2550px) {
+  @media (min-width: 1440px) {
     .brand i{
       font-size: min(2.5rem, 2vw);
     }
