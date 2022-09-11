@@ -111,6 +111,13 @@ body{
     right: 11%;
 }
 
+@media (min-width: 1980px){
+    .image-grid{
+        --num-cols: 3;
+        --row-height: 40rem;
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .image-grid{
