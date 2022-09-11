@@ -118,7 +118,7 @@
     font-size: 1.2rem;
     position: relative;
     z-index: 1;
-    padding: 25px;
+    padding: 15px;
     font-family: 'Roboto', sans-serif;
   }
 
@@ -129,6 +129,7 @@
     }
     .home-nav a{
       font-size: min(2.25rem, 1.35vw);
+      padding: 25px;
     }
     .slide-btn{
       font-size: 2.5rem !important;
@@ -139,7 +140,6 @@
     .home-nav a{
       letter-spacing: 3px;
       font-size: 1rem;
-      padding: 10px;
     }
 
     .home-nav{
