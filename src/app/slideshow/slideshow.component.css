@@ -118,18 +118,17 @@
     font-size: 1.2rem;
     position: relative;
     z-index: 1;
-    padding: 15px;
+    padding: 25px;
     font-family: 'Roboto', sans-serif;
   }
 
   /* 4K */
-  @media (min-width: 1440px) {
+  @media (min-width: 1980px) {
     .brand i{
       font-size: min(2.5rem, 2vw);
     }
     .home-nav a{
       font-size: min(2.25rem, 1.35vw);
-      padding: 5px !important;
     }
     .slide-btn{
       font-size: 2.5rem !important;
