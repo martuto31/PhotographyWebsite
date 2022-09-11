@@ -305,6 +305,7 @@ img.about-me{
     .card-btn{
       font-size: min(2.25vmin, 2rem) !important;
       padding: min(1.45vmin, 1.5rem);
+      border-radius: .8rem;
     }
   }
   
