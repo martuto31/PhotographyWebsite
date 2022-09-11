@@ -66,6 +66,17 @@
     display: none;
 }
 
+/* 4k navbar*/
+@media (min-width: 1440px){
+    .portfolio-nav a{
+        font-size: min(2.35rem, 2.2vmin);
+    }
+
+    .fa-brands{
+        font-size: min(2.3rem, 2.2vmin);
+    }
+}
+
 /* nav toggle for tablets and phones */
   @media (max-width: 768px)
   {
