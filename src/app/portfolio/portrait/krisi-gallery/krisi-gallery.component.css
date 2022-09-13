@@ -76,10 +76,18 @@ body{
 .popup-image img{
     border: 5px solid white;
     border-radius: .45rem;
-    max-width: 75%;
+    max-width: 86%;
     max-height: 90%;
     /* width: min(45vw, 35rem); */
     object-fit: cover;
+}
+
+/* phone screens */
+@media(max-width: 768px){
+    .popup-image img{
+        max-width: 92%;
+        max-height: 92%;
+    }
 }
 
 .slide-btn{
