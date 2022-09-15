@@ -104,13 +104,13 @@ body{
 .btn-left{
     position:absolute;
     top: 45%;
-    left: 17%;
+    left: 20%;
 }
 
 .btn-right{
     position: absolute;
     top: 45%;
-    right: 17%;
+    right: 20%;
 }
 
 @media (min-width: 1980px){
