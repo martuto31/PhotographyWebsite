@@ -10,7 +10,7 @@ import { asapScheduler } from 'rxjs';
 export class VictoriaPetarGalleryComponent implements OnInit {
 
   public id: number = 1;
-  public maxId: number = 74;
+  public maxId: number = 66;
 
   constructor() { }
 
