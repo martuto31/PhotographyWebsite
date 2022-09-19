@@ -96,6 +96,20 @@ body{
     }
 }
 
+/* tablets and small laptops */
+@media(min-width: 768px) and (max-width: 1024px){
+    .popup-image img{
+        max-width: 92%;
+        max-height: 92%;
+    }
+    .btn-left{
+        left: 5%!important;
+    }
+    .btn-right{
+        right: 5%!important;
+    }
+}
+
 .slide-btn{
     border: none;
     background-color: transparent;
