@@ -88,6 +88,12 @@ body{
         max-width: 92%;
         max-height: 92%;
     }
+    .btn-left{
+        left: 1%!important;
+    }
+    .btn-right{
+        right: 1%!important;
+    }
 }
 
 .slide-btn{
