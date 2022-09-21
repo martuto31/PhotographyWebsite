@@ -129,6 +129,7 @@ img.about-me{
     letter-spacing: .05em;
     padding: min(.8rem, 2vmin);
     box-sizing: border-box;
+    transition: all 0.5s;
   }
   
   .btn:hover{
