@@ -19,7 +19,7 @@ export class SlideshowComponent implements OnInit {
   nextSlideShow(){
     var slides = document.getElementById("slides");
     this.slideIndex++;
-    var slidesNumber = 10;
+    var slidesNumber = 4;
 
     // for(var i = 0; i < slides.length; i++)
     // {
@@ -31,7 +31,7 @@ export class SlideshowComponent implements OnInit {
     {
       this.slideIndex = 1;
       slides?.classList.add("bg-1");
-      slides?.classList.remove("bg-10");
+      slides?.classList.remove("bg-" + slidesNumber);
     }
     else{
       slides?.classList.add("bg-" + (this.slideIndex));
@@ -50,7 +50,7 @@ export class SlideshowComponent implements OnInit {
     if(this.slideIndex < 1)
     {
       this.slideIndex = slidesNumber;
-      slides?.classList.add("bg-10");
+      slides?.classList.add("bg-" + slidesNumber);
       slides?.classList.remove("bg-1");
     }
     else{
