@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class VanesaStanislavGalleryComponent implements OnInit {
 
   public id: number = 1;
-  public maxId: number = 20;
+  public maxId: number = 33;
 
   constructor() { }
 
