@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "phbyviki"
+    "default": "phByViki"
   },
   "targets": {
-    "phbyviki": {
+    "phByViki": {
       "hosting": {
         "VikiPhotography": [
-          "phbyviki"
+          "phByViki"
         ]
       }
     }

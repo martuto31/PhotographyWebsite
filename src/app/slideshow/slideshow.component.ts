@@ -16,47 +16,44 @@ export class SlideshowComponent implements OnInit {
 
   public slideIndex: number = 1;
 
-  nextSlideShow(){
+  nextSlideShow() {
     var slides = document.getElementById("slides");
     this.slideIndex++;
     var slidesNumber = 4;
-
-    // for(var i = 0; i < slides.length; i++)
-    // {
-    //   slides[i].style.display = "none";
-    // }
-
-    //only works with 3 pictures, FIX NEEDED!! - Bad practice
-    if(this.slideIndex > slidesNumber)
-    {
+  
+    if (this.slideIndex > slidesNumber) {
       this.slideIndex = 1;
-      slides?.classList.add("bg-1");
-      slides?.classList.remove("bg-" + slidesNumber);
     }
-    else{
-      slides?.classList.add("bg-" + (this.slideIndex));
-      slides?.classList.remove("bg-" + (this.slideIndex-1));
-    }
-    // slides[slideIndex - 1].style.display = "flex";
-    // setTimeout(() => {this.slideShow(slideIndex)}, 3500);
+  
+    slides?.classList.add("bg-" + this.slideIndex);
+    
+    setTimeout(() => {
+      for (let i = 1; i <= slidesNumber; i++) {
+        if (i !== this.slideIndex) {
+          slides?.classList.remove("bg-" + i);
+        }
+      }
+    }, 200);
   }
-
-  previousSlideShow(){
+  
+  previousSlideShow() {
     var slides = document.getElementById("slides");
     this.slideIndex--;
-    var slidesNumber = 10;
-
-    //only works with 3 pictures, FIX NEEDED!! - Bad practice
-    if(this.slideIndex < 1)
-    {
+    var slidesNumber = 4;
+  
+    if (this.slideIndex < 1) {
       this.slideIndex = slidesNumber;
-      slides?.classList.add("bg-" + slidesNumber);
-      slides?.classList.remove("bg-1");
     }
-    else{
-      slides?.classList.add("bg-" + (this.slideIndex));
-      slides?.classList.remove("bg-" + (this.slideIndex+1));
-    }
+  
+    slides?.classList.add("bg-" + this.slideIndex);
+  
+    setTimeout(() => {
+      for (let i = 1; i <= slidesNumber; i++) {
+        if (i !== this.slideIndex) {
+          slides?.classList.remove("bg-" + i);
+        }
+      }
+    }, 200);
   }
 
   makeNavbarActive(id: number){ 
